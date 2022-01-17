@@ -4,59 +4,103 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Contacto</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
         <!-- Cabecera -->
-        <div>
-            <h1>Aquí va la cabecera</h1>
+        <nav class='navbar navbar-expand-lg navbar-light bg-light'>
+            <a class='navbar-brand' href='#'><img src='resources/escudo-estado.png'/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarNav'>
+                <div class='navbar-nav'>
+                    <a class='nav-item nav-link' href='home.html'>Inicio</a>
+                    <a class='nav-item nav-link' href='about.html'>¿Quiénes somos?</a>
+                    <a class='nav-item nav-link' href='about.html'>Servicios</a>
+                    <a class='nav-item nav-link active' href='#'>Contáctanos</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class='container'>
+            <h2>Contáctanos</h2>
         </div>
 
-        <h2>Contáctanos</h2>
-
         <!-- Formulario  -->
-        <div>
+        <div class='container'>
             <form>
-                <label for='name'>Nombre completo: *</label>
-                <input type='text' id='name' /><br />
-                <label for='email'>Correo electrónico: *</label>
-                <input type='text' id='email' /><br />
-                <label for='tel'>Número: </label>
-                <input type='text' id='tel' /><br />
-                <label for='info'>Información adicional</label><br />
-                <input type='text' id='info' /><br />
-                <input type='submit' value='Enviar'>
+                <div class='row'>
+                    <div class='col-md-2'><label for='name'>Nombre completo: *</label></div>
+                    <div class='col-md-6'><input type='text' id='name' /></div>
+                    <div class='col-md-1'><img src='resources/correogris.png' style='max-height: 25px;' /></div>
+                    <div class='col-md-3'>Centro Zempoala, Hgo. C.P. 43838 &#169;2021</div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-md-2'><label for='email'>Correo electrónico: *</label></div>
+                    <div class='col-md-6'><input type='email' id='email' /></div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-md-2'><label for='info'>Teléfono: </label><br /></div>
+                    <div class='col-md-6'><input type='text' id='tel' /></div>
+                    <div class='col-md-1'><img src='resources/correogris.png' style='max-height: 25px;'/></div>
+                    <div class='col-md-3'>12 34 56 78 90</div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-md-9'><label for='info'>Información adicional</label></div>
+                    <div class='col-md-3'>L a V de 10:00 A.M. a 18:00 PM</div>
+                </div>
+
+                <div class='row'>
+                    <div class='col-md-8'><input type='text' id='info' placeholder='Escribe aquí información adicional' /></div>
+                    <div class='col-md-1'><img src='resources/correogris.png' style='max-height: 25px;'/></div>
+                    <div class='col-md-3'>mail@mail.com</div>
+                </div>
+                
+                <div class='row'>
+                    <div class='col-xl-1'><input type='submit' value='Enviar'></div>
+                </div>
             </form>
         </div>
 
-        <!-- Contacto -->
-        <div>
-            <p>
-                Centro Zempoala, Hgo. C.P. 43838 &#169;2021
-            </p>
-            <p>
-                12 34 56 78 90<br />
-                L a V de 10:00 A.M. a 18:00 PM
-            </p>
-            <p>
-                mail@mail.com
-            </p>
-        </div>
+        <!-- Saltos de página para probar cabecera -->
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
         <!-- Pie de página -->
         <!-- Imágenes gubernamentales -->
-        <div>
-            <img src='resources/infomex.png' />
-            <img src='resources/policiazempoala.png' />
-            <img src='resources/escudo-estado.png' />
-            <img src='resources/magico_cabeza-u5416.png' />
-            <img src='resources/proteccioncivil.png' />
-            <img src='resources/conac2.png' />
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-2'><img src='resources/infomex.png' /></div>
+                <div class='col-sm-2'><img src='resources/policiazempoala.png' /></div>
+                <div class='col-sm-2'><img src='resources/escudo-estado.png' /></div>
+                <div class='col-sm-2'><img src='resources/magico_cabeza-u5416.png' /></div>
+                <div class='col-sm-2'><img src='resources/proteccioncivil.png' /></div>
+                <div class='col-sm-2'><img src='resources/conac2.png' /></div>
+            </div>
         </div>
 
         <!-- Información adicional -->
-        <div>
-            <p>Plaza principal S/N, Col. Centro Zempoala, Hgo. C.P. 43838</p>
-            <p>&#169;2021</p>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-xl-12'>Plaza principal S/N, Col. Centro Zempoala, Hgo. C.P. 43838</div>
+                <div class='col-xl-12'>&#169;2021</div>
+            </div>
         </div>
+
+        <!-- Enlaces -->
+        <div class='container'>
+            <div class='row'>
+                <div class='col-xl-1'><a href='#'>Facebook</a></div>
+                <div class='col-xl-1'><a href='#'>Twitter</a></div>
+                <div class='col-xl-1'><a href='#'>Instagram</a></div>
+                <div class='col-xl-1'><a href='#'>YouTube</a></div>
+            </div>
+        </div>
+        
+        <!-- Tengo entendido que esta línea va al final del cuerpo de la página -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
