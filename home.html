@@ -5,6 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Inicio</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- Archivos para Owl Carousel -->
+        <link rel="stylesheet" href="dependencies/owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="dependencies/owlcarousel/assets/owl.theme.default.min.css">
+        <script src="dependencies/jquery-3.6.0.min.js" type='text/javascript'></script>
+        <script src="dependencies/owlcarousel/owl.carousel.min.js" type='text/javascript'></script>
+
+        <!-- Script de Owl Carousel -->
+        <script type='text/javascript'>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            });
+        });
+        </script>
     </head>
     <body>
         <!-- Cabecera -->
@@ -23,17 +51,23 @@
             </div>
         </nav>
 
-        <!-- About -->
         <div class='container'>
             <div class='row'>
-                <div class='col-md-12'><img src='resources/magico_cabeza-u5416.png' /></div>
+                <h1>Bienvenido a Zempoala</h1>
             </div>
-            
-            <div class='row'>
-                <div class='col-md-12'><h1>Aquí va el carrusel</h1></div>
-            </div>
+        </div>
 
-            </div><h1></h1>
+        <!-- Carrusel -->
+        <div class='container'>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src='resources/magico_cabeza-u5416.png' /></div>
+                <div class="item"><img src='resources/policiazempoala.png' /></div>
+                <div class="item"><img src='resources/zemp_letras.png' /></div>
+                <div class="item"><img src='resources/smiling-woman-in-headset-presentation-something.jpg' /></div>
+                <div class="item"><img src='resources/aseh.png' /></div>
+                <div class="item"><img src='resources/banner203.jpg' /></div>
+                <div class="item"><img src='resources/tur01374x280.png' /></div>
+            </div>
         </div>
 
         <!-- Saltos de página para probar cabecera -->
