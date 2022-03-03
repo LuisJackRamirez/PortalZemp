@@ -34,4 +34,26 @@ class PersonasController extends Controller
 
         return redirect()->route('index')->with('success', 'Persona guardada correctamente');
     }
+
+    public function update(Request $request, $id)
+    {
+        $persona = Persona::find ($id);
+
+        $persona = new Persona();
+        $persona->nombre = $request->nombre;
+        $persona->email = $request->email;
+        $persona->telefono = $request->telefono;
+        $persona->informacionAdicional = $request->informacionAdicional;
+        $persona->save();
+
+        return redirect()->route('index')->with('success', 'Persona actualizada');
+    }
+
+    public function destroy ($id)
+    {
+        $persona = comude::find ($id);
+        $persona->delete();
+
+        return  redirect()->route('index')->with('success', 'Persona eliminada');
+    }
 }
