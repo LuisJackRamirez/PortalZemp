@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Profesor;
 use Illuminate\Http\Request;
 
 class ProfesoresController extends Controller
@@ -51,7 +52,7 @@ class ProfesoresController extends Controller
 
     public function destroy ($id)
     {
-        $profesor = Todo::find ($id);
+        $profesor = Profesor::find ($id);
         $profesor->delete();
 
         return  redirect()->route('index')->with('success', 'Registro profesor/a eliminado');

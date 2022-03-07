@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Escuela;
 use Illuminate\Http\Request;
 
 class EscuelasController extends Controller
@@ -20,8 +21,8 @@ class EscuelasController extends Controller
         $request->validate([
             'nombre' => 'required | min:3',
             'ubicacion' => 'required | unique:escuelas',
-            'horario_id' => 'required',
-            'actividad_id' => 'required',
+            'horario_id' => 'required | exists:horarios,id',
+            'actividad_id' => 'required | exists:actividades,id',
         ]);
 
         $escuela = new Escuela();
@@ -49,7 +50,7 @@ class EscuelasController extends Controller
 
     public function destroy ($id)
     {
-        $escuela = Todo::find ($id);
+        $escuela = Escuela::find ($id);
         $escuela->delete();
 
         return redirect()->route('index')->with('success', 'Escuela eliminada');

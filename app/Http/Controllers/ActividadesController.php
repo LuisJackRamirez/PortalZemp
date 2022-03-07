@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Actividad;
 use Illuminate\Http\Request;
 
 class ActividadesController extends Controller
@@ -22,14 +23,14 @@ class ActividadesController extends Controller
             'inscripcion' => 'required',
             'costo' => 'required',
             'telefono' => 'required',
-            'escuela_id' => 'required',
+            'escuela_id' => 'required | exists:escuelas,id',
             'requisitos' => 'required',
-            'profesor_id' => 'required',
+            'profesor_id' => 'required | exists:profesores,id',
         ]);
 
         $actividad = new Actividad();
         $actividad->nombre = $request->nombre;
-        $actividad->inscripcion = $request->inscripcion;    
+        $actividad->inscripcion = $request->inscripcion;
         $actividad->costo = $request->costo;
         $actividad->escuela_id = $request->escuela_id;
         $actividad->requisitos = $request->requisitos;
@@ -43,9 +44,8 @@ class ActividadesController extends Controller
     public function update (Request $request, $id)
     {
         $actividad = Actividad::find($id);
-
         $actividad->nombre = $request->nombre;
-        $actividad->inscripcion = $request->inscripcion;    
+        $actividad->inscripcion = $request->inscripcion;
         $actividad->costo = $request->costo;
         $actividad->escuela_id = $request->escuela_id;
         $actividad->requisitos = $request->requisitos;
@@ -58,7 +58,7 @@ class ActividadesController extends Controller
 
     public function destroy ($id)
     {
-        $actividad = Todo::find ($id);
+        $actividad = Actividad::find ($id);
         $actividad->delete();
 
         return redirect()->route('index')->with('success', 'Actividad eliminada');
