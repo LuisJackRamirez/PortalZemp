@@ -1,0 +1,18 @@
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.icon {
+    font-size: 2em;
+    padding-right: 0.2em;
+}
+
+.justify-text {
+    text-align: justify;
+}

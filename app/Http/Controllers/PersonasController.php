@@ -38,8 +38,6 @@ class PersonasController extends Controller
     public function update(Request $request, $id)
     {
         $persona = Persona::find ($id);
-
-        $persona = new Persona();
         $persona->nombre = $request->nombre;
         $persona->email = $request->email;
         $persona->telefono = $request->telefono;
@@ -51,7 +49,7 @@ class PersonasController extends Controller
 
     public function destroy ($id)
     {
-        $persona = comude::find ($id);
+        $persona = Persona::find ($id);
         $persona->delete();
 
         return  redirect()->route('index')->with('success', 'Persona eliminada');

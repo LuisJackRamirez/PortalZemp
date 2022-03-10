@@ -14,8 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// User
 Route::get('/', function () {
     return view('index');
 });
 
 Route::post('/', [PersonasController::class, 'store']);
+
+
+// Admin
+Route::get('/admin', function () {
+    return view('admin');
+})->name('admin');
