@@ -18,9 +18,7 @@ return new class extends Migration
             $table->string('nombre');
             $table->string('inscripcion');
             $table->integer('costo');
-            $table->foreignId('escuela_id')->references('id')->on('escuelas');
             $table->string('requisitos');
-            $table->integer('telefono');
             $table->timestamps();
         });
     }

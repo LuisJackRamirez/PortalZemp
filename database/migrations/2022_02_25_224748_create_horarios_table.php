@@ -18,8 +18,6 @@ return new class extends Migration
             $table->string('dia');
             $table->time('hora_inicio');
             $table->time('hora_fin');
-            $table->foreignId('actividad_id')->references('id')->on('actividades');
-            $table->foreignId('escuela_id')->references('id')->on('escuelas');
             $table->timestamps();
         });
     }

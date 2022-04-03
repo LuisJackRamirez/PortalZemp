@@ -16,9 +16,7 @@ return new class extends Migration
         Schema::create('escuelas', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-//            $table->foreignId('horario_id')->references('id')->on('horarios');
             $table->string('ubicacion');
-//            $table->foreignId('actividad_id')->references('id')->on('actividades');
             $table->timestamps();
         });
     }

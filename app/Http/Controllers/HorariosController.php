@@ -21,22 +21,18 @@ class HorariosController extends Controller
         $request->validate(
             [
                 'dia' => 'required | string',
-                'hora_inicio' => 'required | date_format:H:i',
-                'hora_fin' => 'required | date_format:H:i | after:hora_inicio',
-                'actividad_id' => 'required | integer | exists:actividades,id',
-                'escuela_id' => 'required | integer | exists:escuelas,id',
+                'hora_inicio' => 'required',
+                'hora_fin' => 'required | after:hora_inicio',
             ]
         );
 
-        $horario = new Horario();
+        $horario = new Horario;
         $horario->dia = $request->dia;
         $horario->hora_inicio = $request->hora_inicio;
         $horario->hora_fin = $request->hora_fin;
-        $horario->actividad_id = $request->actividad_id;
-        $horario->escuela_id = $request->escuela_id;
         $horario->save();
 
-        return redirect()->route('horarios.index')->with('success', 'Horario creado correctamente');
+        return redirect()->route('horarios')->with('success', 'Horario creado correctamente');
     }
 
     public function update(Request $request, $id){
@@ -44,10 +40,8 @@ class HorariosController extends Controller
         $request->validate(
             [
                 'dia' => 'required | string',
-                'hora_inicio' => 'required | date_format:H:i',
-                'hora_fin' => 'required | date_format:H:i | after:hora_inicio',
-                'actividad_id' => 'required | integer | exists:actividades,id',
-                'escuela_id' => 'required | integer | exists:escuelas,id',
+                'hora_inicio' => 'required',
+                'hora_fin' => 'required | after:hora_inicio',
             ]
         );
 
@@ -55,17 +49,15 @@ class HorariosController extends Controller
         $horario->dia = $request->dia;
         $horario->hora_inicio = $request->hora_inicio;
         $horario->hora_fin = $request->hora_fin;
-        $horario->actividad_id = $request->actividad_id;
-        $horario->escuela_id = $request->escuela_id;
         $horario->save();
 
-        return redirect()->route('horarios.index')->with('success', 'Horario actualizado correctamente');
+        return redirect()->route('horarios')->with('success', 'Horario actualizado correctamente');
     }
 
     public function destroy($id){
         $horario = Horario::find($id);
         $horario->delete();
-        return redirect()->route('horarios.index')->with('success', 'Horario eliminado correctamente');
+        return redirect()->route('horarios')->with('success', 'Horario eliminado correctamente');
     }
 
     public function show($id){
