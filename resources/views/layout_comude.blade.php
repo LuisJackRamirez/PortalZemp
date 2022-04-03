@@ -35,7 +35,15 @@
 
 
 <!-- Footer -->
-<div class="container-fluid footer">
+
+<!-- 
+    Le removí 'footer' a la siguiente línea porque 
+    hacía que el pie de página quedara estático en
+    la pantalla delante del resto de la página.
+
+<div class="container-fluid footer">         
+-->
+<div class="container-fluid">
     <div class="container-fluid">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3 align-items-center">

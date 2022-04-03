@@ -24,8 +24,12 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::post('/', [PersonasController::class, 'store']);
+// Zempoala info
+Route::get('/about', function () {
+    return view('info_zempoala');
+});
 
+Route::post('/', [PersonasController::class, 'store']);
 
 // Admin
 Route::get('/admin', function () {
