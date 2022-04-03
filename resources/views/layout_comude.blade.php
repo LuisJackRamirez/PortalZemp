@@ -15,7 +15,7 @@
 <!-- Header -->
 <div class="container-fluid">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom ">
-        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <a href="{{route('index')}}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             <svg class="bi me-2" width="40" height="32">
                 <use/>
             </svg>
@@ -23,10 +23,10 @@
         </a>
 
         <ul class="nav nav-pills align-items-center">
-            <li class="nav-item"><a href="#" class="nav-link text-muted" aria-current="page">Inicio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-muted">¿Quiénes somos?</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-muted">Servicios</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-muted">Contáctanos</a></li>
+            <li class="nav-item"><a href="{{route('index')}}" class="nav-link text-muted" aria-current="page">Inicio</a></li>
+            <li class="nav-item"><a href="{{route('about')}}" class="nav-link text-muted">¿Quiénes somos?</a></li>
+            <li class="nav-item"><a href="{{route('services')}}" class="nav-link text-muted">Servicios</a></li>
+            <li class="nav-item"><a href="{{route('contact')}}" class="nav-link text-muted">Contáctanos</a></li>
         </ul>
     </header>
 </div>
@@ -36,12 +36,12 @@
 
 <!-- Footer -->
 
-<!-- 
-    Le removí 'footer' a la siguiente línea porque 
+<!--
+    Le removí 'footer' a la siguiente línea porque
     hacía que el pie de página quedara estático en
     la pantalla delante del resto de la página.
 
-<div class="container-fluid footer">         
+<div class="container-fluid footer">
 -->
 <div class="container-fluid">
     <div class="container-fluid">

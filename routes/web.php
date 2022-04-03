@@ -22,14 +22,25 @@ use Illuminate\Support\Facades\Route;
 // User
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 
 // Zempoala info
-Route::get('/about', function () {
-    return view('info_zempoala');
-});
+Route::get('/sobre_nosotros', function () {
+    return view('about');
+})->name('about');
+
+// Servicios
+Route::get('/servicios', function () {
+    return view('services');
+})->name('services');
+
+// Contacto
+Route::get('/contacto', function () {
+    return view('contact');
+})->name('contact');
 
 Route::post('/', [PersonasController::class, 'store']);
+
 
 // Admin
 Route::get('/admin', function () {
