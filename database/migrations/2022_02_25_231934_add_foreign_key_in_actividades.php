@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::table('actividades', function (Blueprint $table) {
             $table->foreignId('profesor_id')->references('id')->on('profesores');
+            $table->foreignId('horario_id')->references('id')->on('horarios');
+            $table->foreignId('escuela_id')->references('id')->on('escuelas');
         });
     }
 

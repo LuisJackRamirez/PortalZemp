@@ -26,6 +26,7 @@ class ActividadesController extends Controller
             'escuela_id' => 'required | exists:escuelas,id',
             'requisitos' => 'required',
             'profesor_id' => 'required | exists:profesores,id',
+            'horario_id' => 'required | exists:horarios,id',
         ]);
 
         $actividad = new Actividad();
@@ -36,6 +37,7 @@ class ActividadesController extends Controller
         $actividad->requisitos = $request->requisitos;
         $actividad->telefono = $request->telefono;
         $actividad->profesor_id = $request->profesor_id;
+        $actividad->horario_id = $request->horario_id;
         $actividad->save();
 
         return redirect()->route('index')->with('success', 'Actividad guardada correctamente');

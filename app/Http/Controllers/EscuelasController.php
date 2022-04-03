@@ -20,19 +20,15 @@ class EscuelasController extends Controller
     {
         $request->validate([
             'nombre' => 'required | min:3',
-            'ubicacion' => 'required | unique:escuelas',
-            'horario_id' => 'required | exists:horarios,id',
-            'actividad_id' => 'required | exists:actividades,id',
+            'ubicacion' => 'required | min:3',
         ]);
 
-        $escuela = new Escuela();
+        $escuela = new Escuela;
         $escuela->nombre = $request->nombre;
         $escuela->ubicacion = $request->ubicacion;
-        $escuela->horario_id = $request->horario_id;
-        $escuela->actividad_id = $request->actividad_id;
         $escuela->save();
 
-        return redirect()->route('index')->with('success', 'Escuela guardada correctamente');
+        return redirect()->route('escuelas')->with('success', 'Escuela guardada correctamente');
     }
 
     public function update (Request $request, $id)
@@ -41,11 +37,9 @@ class EscuelasController extends Controller
 
         $escuela->nombre = $request->nombre;
         $escuela->ubicacion = $request->ubicacion;
-        $escuela->horario_id = $request->horario_id;
-        $escuela->actividad_id = $request->actividad_id;
         $escuela->save();
 
-        return redirect()->route('index')->with('success', 'Escuela actualizada');
+        return redirect()->route('escuelas')->with('success', 'Escuela actualizada');
     }
 
     public function destroy ($id)
@@ -53,6 +47,6 @@ class EscuelasController extends Controller
         $escuela = Escuela::find ($id);
         $escuela->delete();
 
-        return redirect()->route('index')->with('success', 'Escuela eliminada');
+        return redirect()->route('escuelas')->with('success', 'Escuela eliminada');
     }
 }

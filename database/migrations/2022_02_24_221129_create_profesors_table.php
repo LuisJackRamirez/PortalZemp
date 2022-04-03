@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('profesores', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->foreignId('actividad_id')->references('id')->on('actividades');
             $table->string('telefono');
             $table->string('email')->unique();
             $table->string('informacion_adicional')->nullable();

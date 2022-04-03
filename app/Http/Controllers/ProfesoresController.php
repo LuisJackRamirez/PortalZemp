@@ -20,20 +20,18 @@ class ProfesoresController extends Controller
         $request->validate([
             'nombre' => 'required | min:3',
             'email' => 'required | email | unique:profesores',
-            'actividad_id' => 'required',
             'telefono' => 'required',
             'informacionAdicional' => 'nullable',
         ]);
 
-        $profesor = new Profesor();
+        $profesor = new Profesor;
         $profesor->nombre = $request->nombre;
         $profesor->email = $request->email;
-        $profesor->actividad_id = $request->actividad_id;
         $profesor->telefono = $request->telefono;
-        $profesor->informacionAdicional = $request->informacionAdicional;
+        $profesor->informacion_adicional = $request->informacion_adicional;
         $profesor->save();
 
-        return redirect()->route('index')->with('success', 'Profesor/a guardada correctamente');
+        return redirect()->route('profesores')->with('success', 'Profesor/a guardada correctamente');
     }
 
     public function update (Request $request, $id)
@@ -42,12 +40,11 @@ class ProfesoresController extends Controller
 
         $profesor->nombre = $request->nombre;
         $profesor->email = $request->email;
-        $profesor->actividad_id = $request->actividad_id;
         $profesor->telefono = $request->telefono;
-        $profesor->informacionAdicional = $request->informacionAdicional;
+        $profesor->informacion_adicional = $request->informacion_adicional;
         $profesor->save();
 
-        return redirect()->route('index')->with('success', 'Registro Profesor/a actualizado');
+        return redirect()->route('profesores')->with('success', 'Registro Profesor/a actualizado');
     }
 
     public function destroy ($id)
@@ -55,6 +52,6 @@ class ProfesoresController extends Controller
         $profesor = Profesor::find ($id);
         $profesor->delete();
 
-        return  redirect()->route('index')->with('success', 'Registro profesor/a eliminado');
+        return  redirect()->route('profesores')->with('success', 'Registro profesor/a eliminado');
     }
 }
