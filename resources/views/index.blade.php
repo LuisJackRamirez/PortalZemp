@@ -48,16 +48,15 @@
 </div>
 <br>
 
-    <div class="container mb-5">
-        <div class="row">
-            <div class="col-5 mt-3">
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpresidenciamunicipaldezempoala%2Fposts%2F368657448639506&show_text=true&width=500" style=" width: 100%; height: 610px; border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </div>
-            <div class="col-4">
-                <blockquote class="twitter-tweet" data-lang="es" data-theme="light"><p lang="es" dir="ltr">Sábado <a href="https://twitter.com/hashtag/RockShow?src=hash&amp;ref_src=twsrc%5Etfw">#RockShow</a><a href="https://twitter.com/ZempoalaOficial?ref_src=twsrc%5Etfw">@ZempoalaOficial</a> &quot;Él No Te Sabe Amar&quot;<br>855am <a href="https://twitter.com/exafm955torreon?ref_src=twsrc%5Etfw">@exafm955torreon</a><br>RT <a href="https://twitter.com/leopoldetorres?ref_src=twsrc%5Etfw">@leopoldetorres</a> <a href="https://twitter.com/COHENmx?ref_src=twsrc%5Etfw">@COHENmx</a> <a href="https://twitter.com/fperalesv?ref_src=twsrc%5Etfw">@fperalesv</a> <a href="https://t.co/HLLyuzykCM">pic.twitter.com/HLLyuzykCM</a></p>&mdash; Héctor Becerra (@hectorexafm) <a href="https://twitter.com/hectorexafm/status/718775923080736768?ref_src=twsrc%5Etfw">9 de abril de 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-5 mt-3">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpresidenciamunicipaldezempoala%2Fposts%2F368657448639506&show_text=true&width=500" style=" width: 100%; height: 610px; border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="col-4">
+            <blockquote class="twitter-tweet" data-lang="es" data-theme="light"><p lang="es" dir="ltr">Sábado <a href="https://twitter.com/hashtag/RockShow?src=hash&amp;ref_src=twsrc%5Etfw">#RockShow</a><a href="https://twitter.com/ZempoalaOficial?ref_src=twsrc%5Etfw">@ZempoalaOficial</a> &quot;Él No Te Sabe Amar&quot;<br>855am <a href="https://twitter.com/exafm955torreon?ref_src=twsrc%5Etfw">@exafm955torreon</a><br>RT <a href="https://twitter.com/leopoldetorres?ref_src=twsrc%5Etfw">@leopoldetorres</a> <a href="https://twitter.com/COHENmx?ref_src=twsrc%5Etfw">@COHENmx</a> <a href="https://twitter.com/fperalesv?ref_src=twsrc%5Etfw">@fperalesv</a> <a href="https://t.co/HLLyuzykCM">pic.twitter.com/HLLyuzykCM</a></p>&mdash; Héctor Becerra (@hectorexafm) <a href="https://twitter.com/hectorexafm/status/718775923080736768?ref_src=twsrc%5Etfw">9 de abril de 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
     </div>
-
+</div>
 
 @endsection
