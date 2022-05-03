@@ -1,4 +1,4 @@
-<button class="bi-list btn btn-lg ms-4 position-absolute"
+<button class="bi-list btn btn-lg ms-4 "
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasScrolling"
@@ -18,7 +18,6 @@
             <button class="btn btn-primary" type="button" onclick="location.href = '{{route('escuelas')}}'">Escuelas</button>
             <button class="btn btn-primary" type="button" onclick="">Actividades</button>
             <button class="btn btn-primary" type="button" onclick="location.href = '{{route('profesores')}}'">Profesores</button>
-            <button class="btn btn-primary" type="button" onclick="location.href = '{{route('horarios')}}'">Horarios</button>
             <button class="btn btn-primary" type="button">Multimedia de la página</button>
         </div>
     </div>

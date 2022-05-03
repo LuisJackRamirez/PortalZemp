@@ -1,6 +1,6 @@
 @extends('layout_comude')
 
-@section('title', 'Comude Zempoala')
+@section('title', 'Sobre nosotros')
 
 @section('content')
 
@@ -13,7 +13,7 @@
         </p>
         <h4 class="card-title text-center">Visión</h4>
         <p class="card-text justify-text">
-            La Dirección Municipal del Deporte pretende ser un organismo líder en el deporte mediante la generación de proyectos creativos e innovadores que beneficien y activen a toda la población del municipio de Zempoala, construyendo por medio del fomento deportivo la participación ciudadana y el tejido social, mismo que elevara su calidad de vida de diversos sectores poblacionales. 
+            La Dirección Municipal del Deporte pretende ser un organismo líder en el deporte mediante la generación de proyectos creativos e innovadores que beneficien y activen a toda la población del municipio de Zempoala, construyendo por medio del fomento deportivo la participación ciudadana y el tejido social, mismo que elevara su calidad de vida de diversos sectores poblacionales.
         </p>
     </div>
 </div>
