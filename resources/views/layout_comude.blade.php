@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <!--    CSS Global      -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">>
 </head>
 <body>
 <!-- Header -->
@@ -36,15 +37,8 @@
 
 <!-- Footer -->
 
-<!--
-    Le removí 'footer' a la siguiente línea porque
-    hacía que el pie de página quedara estático en
-    la pantalla delante del resto de la página.
+<div class="card container-fluid">
 
-<div class="container-fluid footer">
--->
-<div class="container-fluid">
-    <div class="container-fluid">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3 align-items-center">
                 <li class="nav-item">
@@ -92,7 +86,6 @@
 
             </p>
         </footer>
-    </div>
 </div>
 
 <!--    JS Bootstrap   -->

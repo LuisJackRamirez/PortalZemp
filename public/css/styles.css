@@ -1,0 +1,22 @@
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.icon {
+    font-size: 2em;
+    padding-right: 0.2em;
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+.header{
+    position: relative;
+    top: 0;
+}
+
+.align-left {
+    text-align: left;
+}

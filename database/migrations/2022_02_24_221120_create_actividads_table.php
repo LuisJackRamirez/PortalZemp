@@ -19,6 +19,9 @@ return new class extends Migration
             $table->string('inscripcion');
             $table->integer('costo');
             $table->string('requisitos');
+            $table->string('dias');
+            $table->time('hora_inicio');
+            $table->time('hora_fin');
             $table->timestamps();
         });
     }

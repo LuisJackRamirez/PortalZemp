@@ -23,21 +23,25 @@ class ActividadesController extends Controller
             'inscripcion' => 'required',
             'costo' => 'required',
             'telefono' => 'required',
+            'dias' => 'required',
+            'hora_inicio' => 'required',
+            'hora_fin' => 'required',
             'escuela_id' => 'required | exists:escuelas,id',
             'requisitos' => 'required',
             'profesor_id' => 'required | exists:profesores,id',
-            'horario_id' => 'required | exists:horarios,id',
         ]);
 
         $actividad = new Actividad();
         $actividad->nombre = $request->nombre;
         $actividad->inscripcion = $request->inscripcion;
         $actividad->costo = $request->costo;
+        $actividad->dias = $request->dias;
+        $actividad->hora_inicio = $request->hora_inicio;
+        $actividad->hora_fin = $request->hora_fin;
         $actividad->escuela_id = $request->escuela_id;
         $actividad->requisitos = $request->requisitos;
         $actividad->telefono = $request->telefono;
         $actividad->profesor_id = $request->profesor_id;
-        $actividad->horario_id = $request->horario_id;
         $actividad->save();
 
         return redirect()->route('index')->with('success', 'Actividad guardada correctamente');
