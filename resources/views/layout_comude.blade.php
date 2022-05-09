@@ -14,6 +14,7 @@
 </head>
 <body>
 <!-- Header -->
+<nav class="sticky-top navbar-light bg-light">
 <div class="container-fluid">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom ">
         <a href="{{route('index')}}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
@@ -28,9 +29,11 @@
             <li class="nav-item"><a href="{{route('about')}}" class="nav-link text-muted">¿Quiénes somos?</a></li>
             <li class="nav-item"><a href="{{route('services')}}" class="nav-link text-muted">Servicios</a></li>
             <li class="nav-item"><a href="{{route('contact')}}" class="nav-link text-muted">Contáctanos</a></li>
+            <li class="nav-item"><a href="{{route('login')}}" class="nav-link text-muted">Administrador</a></li>
         </ul>
     </header>
 </div>
+</nav>
 
 @yield('content')
 
