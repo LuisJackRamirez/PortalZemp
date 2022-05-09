@@ -70,9 +70,77 @@
                             Imágenes del carrusel
                         </div>
                         <div class="card-body">
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-success">Agregar foto</a>
-                            <a href="#" class="btn btn-danger text-white">Eliminar foto</a>
+                            <form action="{{ url('image-carrousel') }}" class="form-image-upload" method="POST" enctype="multipart/form-data">
+
+
+                                {!! csrf_field() !!}
+
+
+                                @if (count($errors) > 0)
+                                    <div class="alert alert-danger">
+                                        <strong>Whoops!</strong> Hubieron algunos problemas con tu entrada.<br><br>
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
+
+
+                                @if ($message = Session::get('success'))
+                                    <div class="alert alert-success alert-block">
+                                        <strong>{{ $message }}</strong>
+                                    </div>
+                                @endif
+
+
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <strong>Nombre:</strong>
+                                        <input type="text" name="nombre" class="form-control" placeholder="Nombre">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <strong>Imagen:</strong>
+                                        <input type="file" name="imagen" class="form-control">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <br/>
+                                        <button type="submit" class="btn btn-success">Subir</button>
+                                    </div>
+                                </div>
+
+
+                            </form>
+
+
+                            <div class="row">
+                                <div class='list-group gallery'>
+
+
+                                    @if($images->count())
+                                        <div class="row">
+                                            @foreach($images as $image)
+                                                <div class='col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4'>
+                                                    <a class="thumbnail fancybox" rel="ligthbox" href="/images/{{ $image->imagen }}">
+                                                        <img class="img-responsive" alt="" src="/images/{{ $image->imagen }}" />
+                                                        <div class='text-center'>
+                                                            <small class='text-muted'>{{ $image->nombre }}</small>
+                                                        </div> <!-- text-center / end -->
+                                                    </a>
+                                                    <form action="{{ url('image-carrousel',$image->id) }}" method="POST">
+                                                        <input type="hidden" name="_method" value="delete">
+                                                        {!! csrf_field() !!}
+                                                        <button type="submit" class="close-icon btn btn-danger text-white">X</button>
+                                                    </form>
+                                                </div> <!-- col-6 / end -->
+                                            @endforeach
+                                        </div>
+                                    @endif
+
+
+                                </div> <!-- list-group / end -->
+                            </div> <!-- row / end -->
                         </div>
                         <div class="card-footer text-muted">
                             ...
@@ -82,4 +150,12 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+        });
+    </script>
 </x-app-layout>
