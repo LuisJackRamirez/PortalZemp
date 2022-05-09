@@ -28,7 +28,7 @@ class ActividadesController extends Controller
             'hora_fin' => 'required',
             'escuela_id' => 'required | exists:escuelas,id',
             'requisitos' => 'required',
-            'profesor_id' => 'required | exists:profesores,id',
+            'profesor_id' => 'required | exists:profesores,id'
         ]);
 
         $actividad = new Actividad();
