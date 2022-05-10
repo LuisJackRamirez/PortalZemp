@@ -7,6 +7,7 @@
 <div class="container card">
     <div class="row card-body text-center">
         <div class="w-100">
+            <img class="w-100" src="{{ asset('images/banner202.jpg') }}" alt="comude" >
             <img src="{{ asset('images/comude.png') }}" height="115" width="115" alt="comude" >
         </div>
     </div>
@@ -49,15 +50,15 @@
         </div>
     </div>
     
-    <div class="row card-body w-100">
+    <div class="d-flex row card-body w-100 align-items-center">
         <div class="col-sm w-25">
             <ol class='list-group list-group-flush align-middle'>
-                <li class='list-group-item d-flex justify-content-end'>Institucionalidad</li>
-                <li class='list-group-item d-flex justify-content-end'>Compromiso</li>
-                <li class='list-group-item d-flex justify-content-end'>Responsabilidad</li>
-                <li class='list-group-item d-flex justify-content-end'>Respeto</li>   
-                <li class='list-group-item d-flex justify-content-end'>Trabajo en equipo</li>
-                <li class='list-group-item d-flex justify-content-end'>Inclusión</li>
+                <li class='list-group-item d-flex justify-content-end fs-5'>Institucionalidad</li>
+                <li class='list-group-item d-flex justify-content-end fs-5'>Compromiso</li>
+                <li class='list-group-item d-flex justify-content-end fs-5'>Responsabilidad</li>
+                <li class='list-group-item d-flex justify-content-end fs-5'>Respeto</li>   
+                <li class='list-group-item d-flex justify-content-end fs-5'>Trabajo en equipo</li>
+                <li class='list-group-item d-flex justify-content-end fs-5'>Inclusión</li>
             </ol>
         </div>
         <div class="col-sm w-75">
@@ -65,18 +66,18 @@
         </div>
     </div>
 
-    <div class="row card-body w-100">
+    <div class="d-flex row card-body w-100 align-items-center">
         <div class="col-sm w-75">
             <img class='w-100' src="{{ asset('images/escr01374x280.png') }}" alt="comude" >
         </div>
         <div class="col-sm w-25">
             <ol class='list-group list-group-flush align-middle'>
-                <li class='list-group-item d-flex justify-content-end'>Lealtad</li>
-                <li class='list-group-item d-flex justify-content-end'>Honestidad</li>
-                <li class='list-group-item d-flex justify-content-end'>Eficacia</li>
-                <li class='list-group-item d-flex justify-content-end'>Amistad</li>   
-                <li class='list-group-item d-flex justify-content-end'>Apoyo</li>
-                <li class='list-group-item d-flex justify-content-end'>Unión</li>
+                <li class='list-group-item d-flex justify-content-begin fs-5'>Lealtad</li>
+                <li class='list-group-item d-flex justify-content-begin fs-5'>Honestidad</li>
+                <li class='list-group-item d-flex justify-content-begin fs-5'>Eficacia</li>
+                <li class='list-group-item d-flex justify-content-begin fs-5'>Amistad</li>   
+                <li class='list-group-item d-flex justify-content-begin fs-5'>Apoyo</li>
+                <li class='list-group-item d-flex justify-content-begin fs-5'>Unión</li>
             </ol>
         </div>
     </div>

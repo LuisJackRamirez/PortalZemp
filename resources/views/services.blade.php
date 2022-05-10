@@ -47,7 +47,7 @@
             <div class="carousel-item">
                 <img src="{{ asset('images/ban04.jpg') }}" class="d-block w-100" alt="..." height="600">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Uso</h5>
+                    <h5>Usos múltiples</h5>
                 </div>
             </div>
             <div class="carousel-item">

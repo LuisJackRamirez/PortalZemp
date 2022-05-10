@@ -45,8 +45,9 @@
             En nuestro municipio de Zempoala el Consejo Municipal del Deporte, tiene como enfoque principal planear y desarrollar actividades como lo es el ámbito social, cultural y deportivo y así mejorar la calidad de vida de los niños, jóvenes, adultos, personas de la tercera edad y con capacidades diferentes.
         </p>
     </div>
+    <a href="{{route('about')}}"><button type="button" class="btn btn-outline-dark mb-4">Más información</button></a>
 </div>
-<br>
+<br />
 
 <div class="container mb-5">
     <div class="row">

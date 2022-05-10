@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <!--    CSS Global      -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">>
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
 <!-- Header -->
@@ -21,7 +21,8 @@
             <svg class="bi me-2" width="40" height="32">
                 <use/>
             </svg>
-            <img src="{{ asset('images/escudo-estado.png') }}" class="bi me-2" width="111" height="110" alt="Escudo">
+            <img src="{{ asset('images/LOGOTIPO-cuadrado-CHICO-.jpg') }}" class="bi me-2" width="111" height="110" alt="Escudo">
+            <span class='fs-1 px-3'>ZEMPOALA 2020-2024</span>
         </a>
 
         <ul class="nav nav-pills align-items-center">
@@ -29,7 +30,7 @@
             <li class="nav-item"><a href="{{route('about')}}" class="nav-link text-muted">¿Quiénes somos?</a></li>
             <li class="nav-item"><a href="{{route('services')}}" class="nav-link text-muted">Servicios</a></li>
             <li class="nav-item"><a href="{{route('contact')}}" class="nav-link text-muted">Contáctanos</a></li>
-            <li class="nav-item"><a href="{{route('login')}}" class="nav-link text-muted">Administrador</a></li>
+            <li class="nav-item"><a href="{{route('login')}}" class="nav-link text-muted">Administración</a></li>
         </ul>
     </header>
 </div>
