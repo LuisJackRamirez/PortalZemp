@@ -3,12 +3,12 @@
 @section('title', 'Servicios')
 
 @section('content')
-    <div class="container mb-5">
+    <div class="container mb-5 fs-4">
         <div class="row">
             <div class="container card align-items-center">
                 <img src="{{ asset('images/comude.png') }}" height="115" width="115" alt="comude" >
                 <div class="card-body">
-                    <h4 class="card-title text-center">Servicios</h4>
+                    <h1 class="card-title text-center my-4">Servicios</h1>
                     <p class="card-text justify-text">
                         El Municipio de Zempoala cuenta con una infraestructura deportiva que consiste en la Unidad Deportiva de Zempoala y la Unidad Deportiva San Mateo Tlajomulco. Contamos con distintas canchas para entrenamiento de fútbol, basquetbol y beisbol.
                     </p>
@@ -29,37 +29,37 @@
             <div class="carousel-item active">
                 <img src="{{ asset('images/ban04.jpg') }}" class="d-block w-100" alt="..." height="600">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Fútbol</h5>
+                    <h2 style='background-color:#000000;'>Fútbol</h2>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('images/banner202.jpg') }}" class="d-block w-100" alt="..." height="600">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Basquetbol</h5>
+                    <h2>Basquetbol</h2>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('images/ban04.jpg') }}" class="d-block w-100" alt="..." height="600">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Béisbol</h5>
+                    <h2>Béisbol</h2>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('images/ban04.jpg') }}" class="d-block w-100" alt="..." height="600">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Usos múltiples</h5>
+                    <h2>Usos múltiples</h2>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('images/ban04.jpg') }}" class="d-block w-100" alt="..." height="600">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Ruedos</h5>
+                    <h2>Ruedos</h2>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('images/banner202.jpg') }}" class="d-block w-100" alt="..." height="600">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Lienzos charros</h5>
+                    <h2>Lienzos charros</h2>
                 </div>
             </div>
         </div>
@@ -74,18 +74,18 @@
     </div>
     <br />
 
-    <div class="container mb-5">
+    <div class="container mb-5 fs-4">
         <div class="row">
             <div class="container card align-items-center">
                 <img src="{{ asset('images/comude.png') }}" height="115" width="115" alt="comude" >
                 <div class="card-body">
-                    <h4 class="card-title text-center">Actividades</h4>
+                    <h1 class="card-title text-center my-4">Actividades</h1>
                     <div class='row'>
                         <div class='col'>
-                            <h5 class='card-title text-center'>Deportes</h5>
+                            <h2 class='card-title text-center my-4'>Deportes</h2>
                         </div>
                         <div class='col'>
-                            <h5 class='card-title text-center'>Parques</h5>
+                            <h2 class='card-title text-center my-4'>Parques</h2>
                         </div>
                     </div>
                     <div class='row'>
@@ -121,19 +121,35 @@
         </div>
     </div>
     
-    <div class="container mb-5">
+    <div class="container mb-5 fs-4">
         <div class="row">
             <div class="container card align-items-center">
                 <img src="{{ asset('images/comude.png') }}" height="115" width="115" alt="comude" >
                 <div class="card-body">
-                    <h4 class="card-title text-center">Escuelas</h4>
+                    <h1 class="card-title text-center my-4">Escuelas</h1>
                     <div class='row'>
-                        <div class="d-flex col-sm align-items-center">
-                            <p class="card-text justify-text px-3">
-                                En el Municipio de Zempoala existen diferentes escuelas de formación de fútbol en distintas comunidades: de San Mateo Tlajomulco, San Gabriel Azteca, Zempoala, Jaguey de Téllez y Fraccionamientos, así como tres escuelas de iniciación en las diciplinas de charrería, beisbol y basquetbol.
-                            </p>
+                        <div class="col-sm align-items-center mx-3">
+                            <div class="row">
+                                <p class="card-text justify-text">
+                                    En el Municipio de Zempoala existen diferentes escuelas de formación de fútbol en distintas comunidades:<br />
+                                </p>
+                            </div>
+                            <div class='row mx-5'>
+                                <ul>
+                                    <li>San Mateo Tlajomulco</li>
+                                    <li>San Gabriel Azteca</li> 
+                                    <li>Zempoala</li>
+                                    <li>Jaguey de Téllez</li>
+                                    <li>Fraccionamientos</li>
+                                </ul>
+                            </div>
+                            <div class='row'>
+                                <p class="card-text justify-text">
+                                    Contamos también tres escuelas de iniciación en las diciplinas de charrería, beisbol y basquetbol.
+                                </p>
+                            </div>
                         </div>
-                        <div class='col-sm'>
+                        <div class='col-sm mx-3'>
                             <img src="{{ asset('images/banner202.jpg') }}" class="d-block w-100" alt="...">
                         </div>
                     </div>
@@ -153,4 +169,5 @@
             <li class='list-group-item flex-fill'>3 equipos femeniles en softbol</li>
         </ul>
     </div>
+
 @endsection

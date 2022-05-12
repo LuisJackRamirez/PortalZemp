@@ -3,17 +3,19 @@
 @section('title', 'Contacto')
 
 @section('content')
-
     <!-- Contacto -->
-    <div class="container">
+    <div class="container fs-4">
+        <div class="row">
+            <div class="container card align-items-center my-3">
+                <img src="{{ asset('images/comude.png') }}" height="115" width="115" alt="comude" >
+                <h1 class="card-title text-center">Contáctanos</h1>
+            </div>
+        </div>
         <div class="row">
             <div class="col-xl-8 col-lg-12 col-md-12">
-                <div class="container">
+                <div class="container card">
                     <form>
-                        <br>
-                        <h4 class="card-title text-center">Contáctanos</h4>
-                        <br>
-                        <div class="row">
+                        <div class="row my-3">
                             <!--      Sección de formulario      -->
                             <div class="col-5">
                                 <div class="row">
@@ -40,13 +42,11 @@
                                         <textarea class="form-control" id="InputInfo" rows="3"></textarea>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Enviar</button>
-                                <br>
-                                <br>
+                                <div class='container text-center'>
+                                    <button type="submit" class="btn text-center btn-primary mb-4 fs-4">Enviar</button>
+                                </div>
                             </div>
-                            <div class="col-2"></div>
-                            <!--      Sección de información      -->
-                            <div class=" col-5">
+                            <div class="col-5 mx-3">
                                 <div class="row"><span><i class="bi bi-house icon"></i>Centro Zempoala, Hgo. C.P. 43838 &copy; 2021</span></div>
                                 <div class="row"><span><i class="bi bi-phone icon"></i>12 34 56 78 90 Lunes a Viernes de 10:00 A.M. a 18:00 P.M.</span></div>
                                 <div class="row"><span><i class="bi bi-envelope icon"></i>mail@mail.com</span></div>

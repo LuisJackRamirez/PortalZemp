@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div class="container card">
+<div class="container card fs-4">
     <div class="row card-body text-center">
         <div class="w-100">
             <img class="w-100" src="{{ asset('images/banner202.jpg') }}" alt="comude" >
@@ -14,7 +14,7 @@
     <div class="row card-body">
         <div class="col-sm">
             <div class="card-body">
-                <h4 class="card-title text-center">Misión</h4>
+                <h1 class="card-title text-center my-4">Misión</h1>
                 <p class="card-text justify-text">
                     La Dirección Municipal del Deporte tiene a bien estimular, promover y apoyar, la enseñanza del deporte para todos los habitantes del municipio, en espacios deportivos y recreativos con una infraestructura adecuada y de calidad, con personal calificado y atendiendo las necesidades de la población.
                 </p>
@@ -22,7 +22,7 @@
         </div>
         <div class="col-sm">
             <div class="card-body">
-                <h4 class="card-title text-center">Visión</h4>
+                <h1 class="card-title text-center my-4">Visión</h1>
                 <p class="card-text justify-text">
                     La Dirección Municipal del Deporte pretende ser un organismo líder en el deporte mediante la generación de proyectos creativos e innovadores que beneficien y activen a toda la población del municipio de Zempoala, construyendo por medio del fomento deportivo la participación ciudadana y el tejido social, mismo que elevara su calidad de vida de diversos sectores poblacionales.
                 </p>
@@ -46,38 +46,29 @@
             <img src="{{ asset('images/comude.png') }}" height="115" width="115" alt="comude" >
         </div>
         <div class="w-100">
-            <h4 class="card-title text-center">Valores</h4>
+            <h1 class="card-title text-center">Valores</h1>
         </div>
     </div>
     
-    <div class="d-flex row card-body w-100 align-items-center">
-        <div class="col-sm w-25">
+    <div class="d-flex row card-body w-100 align-items-center fs-4" height="5000" style="background-image:url({{ asset('images/female-stafrket.jpg') }});">
+        <div class="col-sm w-25 m-2">
             <ol class='list-group list-group-flush align-middle'>
-                <li class='list-group-item d-flex justify-content-end fs-5'>Institucionalidad</li>
-                <li class='list-group-item d-flex justify-content-end fs-5'>Compromiso</li>
-                <li class='list-group-item d-flex justify-content-end fs-5'>Responsabilidad</li>
-                <li class='list-group-item d-flex justify-content-end fs-5'>Respeto</li>   
-                <li class='list-group-item d-flex justify-content-end fs-5'>Trabajo en equipo</li>
-                <li class='list-group-item d-flex justify-content-end fs-5'>Inclusión</li>
+                <li class='list-group-item d-flex justify-content-end'>Institucionalidad</li>
+                <li class='list-group-item d-flex justify-content-end'>Compromiso</li>
+                <li class='list-group-item d-flex justify-content-end'>Responsabilidad</li>
+                <li class='list-group-item d-flex justify-content-end'>Respeto</li>   
+                <li class='list-group-item d-flex justify-content-end'>Trabajo en equipo</li>
+                <li class='list-group-item d-flex justify-content-end'>Inclusión</li>
             </ol>
         </div>
-        <div class="col-sm w-75">
-            <img class='w-100' src="{{ asset('images/female-stafrket.jpg') }}" alt="comude" >
-        </div>
-    </div>
-
-    <div class="d-flex row card-body w-100 align-items-center">
-        <div class="col-sm w-75">
-            <img class='w-100' src="{{ asset('images/escr01374x280.png') }}" alt="comude" >
-        </div>
-        <div class="col-sm w-25">
+        <div class="col-sm w-75 m-2">
             <ol class='list-group list-group-flush align-middle'>
-                <li class='list-group-item d-flex justify-content-begin fs-5'>Lealtad</li>
-                <li class='list-group-item d-flex justify-content-begin fs-5'>Honestidad</li>
-                <li class='list-group-item d-flex justify-content-begin fs-5'>Eficacia</li>
-                <li class='list-group-item d-flex justify-content-begin fs-5'>Amistad</li>   
-                <li class='list-group-item d-flex justify-content-begin fs-5'>Apoyo</li>
-                <li class='list-group-item d-flex justify-content-begin fs-5'>Unión</li>
+                <li class='list-group-item d-flex justify-content-begin'>Lealtad</li>
+                <li class='list-group-item d-flex justify-content-begin'>Honestidad</li>
+                <li class='list-group-item d-flex justify-content-begin'>Eficacia</li>
+                <li class='list-group-item d-flex justify-content-begin'>Amistad</li>   
+                <li class='list-group-item d-flex justify-content-begin'>Apoyo</li>
+                <li class='list-group-item d-flex justify-content-begin'>Unión</li>
             </ol>
         </div>
     </div>
@@ -90,40 +81,40 @@
             <img src="{{ asset('images/comude.png') }}" height="115" width="115" alt="comude" >
         </div>
         <div class="w-100">
-            <h4 class="card-title text-center">Organigrama</h4>
+            <h1 class="card-title text-center">Organigrama</h1>
         </div>
     </div>
 
     <div class='row h-50'>
         <div class="card-body">
-            <img class='img-fluid' src="{{ asset('images/ORGANIgrama.png') }}" alt="comude" >  
+            <!--<img class='img-fluid' src="{{ asset('images/ORGANIgrama.png') }}" alt="comude" >  -->
         </div>
     </div>
 </div>
 <br />
 
-<div class="container card align-items-center">
+<div class="container card align-items-center fs-4">
     <div class="card-body text-center">
         <div class="w-100">
             <img src="{{ asset('images/comude.png') }}" height="115" width="115" alt="comude" >
         </div>
         <div class="w-100">
-            <h4 class="card-title text-center">Objetivos</h4>
+            <h1 class="card-title text-center my-4">Objetivos</h1>
         </div>
     </div>
 
     <div class='row'>
         <div class="card-body">
-            <p class="card-text justify-text mx-5 mb-3">
+            <p class="card-text justify-text">
                 Incentivar la práctica del deporte, recreación y actividad física mediante la formulación, ejecución y accesibilidad de programas deportivos, incluyentes y eventos recreativos para todos los sectores de la población, aunados de acciones de mantenimiento y rehabilitación de espacios deportivos con criterios de equidad, transparencia, competitividad e inclusión social logrando convertir el uso del tiempo libre en un hábito saludable para obtener calidad de vida.
             </p>
         </div>
     </div>
 
     <div class='container'>
-        <h4 class="card-title text-center">Objetivos específicos</h4>
-        <div class='row'>
-            <div class='col w-40'>
+        <h1 class="card-title text-center my-4">Objetivos específicos</h1>
+        <div class='row align-items-center'>
+            <div class='col'>
                 <div class="card-body">
                     <p class="card-text justify-text">
                         <ol>
@@ -139,9 +130,13 @@
                     </p>
                 </div>
             </div>
-
-            <div class='col w-60'>
-                <img class='w-100' src="{{ asset('images/inf_05.jpg') }}" alt="Objetivos" >
+            <div class='col align-items-center'>
+                <div class='row my-3'>
+                    <img class='w-100' src="{{ asset('images/inf_05.jpg') }}" alt="Objetivos" >
+                </div>                
+                <div class='row my-3'>
+                    <img class='w-100' src="{{ asset('images/inf_05.jpg') }}" alt="Objetivos" >
+                </div>                
             </div>
         </div>
     </div>

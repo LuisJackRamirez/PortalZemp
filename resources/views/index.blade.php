@@ -36,16 +36,16 @@
 <!-- ¿Quienes somos? -->
 <div class="container card align-items-center">
     <img src="{{ asset('images/comude.png') }}" height="115" width="115" alt="comude" >
-    <div class="card-body">
-        <h4 class="card-title text-center">¿Quiénes somos?</h4>
-        <p class="card-text justify-text">
+    <div class="card-body fs-4">
+        <h1 class="card-title text-center my-4">¿Quiénes somos?</h1>
+        <p class="card-text justify-text my-4">
             La actividad física es de vital importancia para desempeñarse en distintos aspectos de la vida, así como dentro de una sociedad para ser una persona integral. El deporte es forjador de disciplina, de cultura, del cuidado del cuerpo, formador de actitud y generador de una buena condición física. Cuando una persona realiza una actividad física, deportiva o recreativa adquiere un potencial para prevenir problemas físicos, psicológicos y de salud.
         </p>
-        <p class="card-text justify-text">
+        <p class="card-text justify-text my-4">
             En nuestro municipio de Zempoala el Consejo Municipal del Deporte, tiene como enfoque principal planear y desarrollar actividades como lo es el ámbito social, cultural y deportivo y así mejorar la calidad de vida de los niños, jóvenes, adultos, personas de la tercera edad y con capacidades diferentes.
         </p>
     </div>
-    <a href="{{route('about')}}"><button type="button" class="btn btn-outline-dark mb-4">Más información</button></a>
+    <a href="{{route('about')}}"><button type="button" class="btn btn-outline-dark mb-4 fs-4">Más información</button></a>
 </div>
 <br />
 

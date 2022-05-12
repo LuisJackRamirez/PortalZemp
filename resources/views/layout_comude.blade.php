@@ -26,11 +26,11 @@
         </a>
 
         <ul class="nav nav-pills align-items-center">
-            <li class="nav-item"><a href="{{route('index')}}" class="nav-link text-muted" aria-current="page">Inicio</a></li>
-            <li class="nav-item"><a href="{{route('about')}}" class="nav-link text-muted">¿Quiénes somos?</a></li>
-            <li class="nav-item"><a href="{{route('services')}}" class="nav-link text-muted">Servicios</a></li>
-            <li class="nav-item"><a href="{{route('contact')}}" class="nav-link text-muted">Contáctanos</a></li>
-            <li class="nav-item"><a href="{{route('login')}}" class="nav-link text-muted">Administración</a></li>
+            <li class="nav-item"><a href="{{route('index')}}" class="nav-link text-muted fs-3" aria-current="page">Inicio</a></li>
+            <li class="nav-item"><a href="{{route('about')}}" class="nav-link text-muted fs-3">¿Quiénes somos?</a></li>
+            <li class="nav-item"><a href="{{route('services')}}" class="nav-link text-muted fs-3">Servicios</a></li>
+            <li class="nav-item"><a href="{{route('contact')}}" class="nav-link text-muted fs-3">Contáctanos</a></li>
+            <li class="nav-item"><a href="{{route('login')}}" class="nav-link text-muted fs-3">Administración</a></li>
         </ul>
     </header>
 </div>
@@ -41,7 +41,7 @@
 
 <!-- Footer -->
 
-<div class="card container-fluid">
+<div class="card container-fluid fs-3">
 
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3 align-items-center">
@@ -77,14 +77,14 @@
                 </li>
             </ul>
             <p class="text-center text-muted">
-                Plaza principal S/N, Col. CentroZempoala, Hgo. C.P. 43838
+                Plaza principal S/N, Col. Centro Zempoala, Hgo. C.P. 43838
                 <br>
                 &copy; 2021
                 <br>
-                <a href="#" ><i class="bi bi-facebook icon text-muted"></i></a>
-                <a href="#"><i class="bi bi-twitter icon text-muted"></i></a>
-                <a href="#"><i class="bi bi-instagram icon text-muted"></i></a>
-                <a href="#"><i class="bi bi-youtube icon text-muted"></i></a>
+                <a href="#" ><i class="bi bi-facebook icon text-muted mx-3"></i></a>
+                <a href="#"><i class="bi bi-twitter icon text-muted mx-3"></i></a>
+                <a href="#"><i class="bi bi-instagram icon text-muted mx-3"></i></a>
+                <a href="#"><i class="bi bi-youtube icon text-muted mx-3"></i></a>
             </p>
             <p class="text-start icon-fixed">
 
